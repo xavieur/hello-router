@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 import 'normalize.css/normalize.css'
 import './sass/style.scss'
 
@@ -27,10 +27,10 @@ const Canciones404 = () => (
 const CancionesHeader = () => (
     <header>
         <h1>Canciones</h1>
-        <Link to='/'>Inicio</Link>
-        <Link to='/create'>Crear</Link>
-        <Link to='/edit'>Edit</Link>
-        <Link to='/faq'>FAQ</Link>
+        <NavLink to='/' activeClassName='es-activo'>Inicio</NavLink>
+        <NavLink to='/create' activeClassName='es-activo'>Crear</NavLink>
+        <NavLink to='/edit' activeClassName='es-activo'>Edit</NavLink>
+        <NavLink to='/faq' activeClassName='es-activo'>FAQ</NavLink>
     </header>
 )
 
